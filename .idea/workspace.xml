@@ -5,31 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70d4694b-6804-4f28-b76e-c03912f3f95b" name="Changes" comment="feat: Book 서비스 작성 완료">
-      <change afterPath="$PROJECT_DIR$/BookMS/src/main/kotlin/study/bhyunnie/book/application/input/AddBookInputPort.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMS/src/main/kotlin/study/bhyunnie/book/application/input/InquiryInputPort.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMS/src/main/kotlin/study/bhyunnie/book/application/input/MakeAvailableInputPort.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMS/src/main/kotlin/study/bhyunnie/book/application/input/MakeUnAvailableInputPort.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMS/src/main/kotlin/study/bhyunnie/book/application/output/BookOutputPort.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMS/src/main/kotlin/study/bhyunnie/book/application/output/InquiryOutputPort.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMS/src/main/kotlin/study/bhyunnie/book/application/output/MakeAvailableOutputPort.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMS/src/main/kotlin/study/bhyunnie/book/application/output/MakeUnAvailableOutputPort.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMS/src/main/kotlin/study/bhyunnie/book/application/usecase/AddBookUsecase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMS/src/main/kotlin/study/bhyunnie/book/application/usecase/InquiryUsecase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMS/src/main/kotlin/study/bhyunnie/book/application/usecase/MakeAvailableUsecase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMS/src/main/kotlin/study/bhyunnie/book/application/usecase/MakeUnAvailableUsecase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMS/src/main/kotlin/study/bhyunnie/book/domain/model/Book.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMS/src/main/kotlin/study/bhyunnie/book/domain/model/vo/BookDesc.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMS/src/main/kotlin/study/bhyunnie/book/domain/model/vo/BookStatus.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMS/src/main/kotlin/study/bhyunnie/book/domain/model/vo/Classification.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMS/src/main/kotlin/study/bhyunnie/book/domain/model/vo/Location.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMS/src/main/kotlin/study/bhyunnie/book/domain/model/vo/Source.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMS/src/main/kotlin/study/bhyunnie/book/framework/jpaadapter/BookAdapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMS/src/main/kotlin/study/bhyunnie/book/framework/jpaadapter/BookRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMS/src/main/kotlin/study/bhyunnie/book/framework/web/BookController.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMS/src/main/kotlin/study/bhyunnie/book/framework/web/dto/BookInfoDto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMS/src/main/kotlin/study/bhyunnie/book/framework/web/dto/BookOutputDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/common/Constants.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/config/KafkaConfig.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/config/SwaggerConfig.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/Member.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/vo/Authority.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/vo/Email.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/vo/IDName.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/vo/Password.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/vo/Point.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/vo/UserRole.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookMS/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/BookMS/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +28,9 @@
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/BookMS">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/MemberMS">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/RentalMS">
@@ -62,9 +52,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Enum" />
         <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
+        <option value="Kotlin Enum" />
       </list>
     </option>
   </component>
@@ -90,7 +80,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.Build BookMS.executor": "Run",
+    "Gradle.Build MemberMS.executor": "Run",
     "Gradle.Build eda_msa_hexagonal.executor": "Run",
+    "Kotlin.IDName.executor": "Run",
     "Kotlin.Member.executor": "Run",
     "Kotlin.RentalCard.executor": "Run",
     "Kotlin.RentalCardNo.executor": "Run",
@@ -106,7 +98,7 @@
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "corretto-17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/bhyunnie/IdeaProjects/eda_msa_hexagonal/BookMS/src/main/kotlin/study/bhyunnie/book",
+    "last_opened_file_path": "C:/Users/bhyunnie/IdeaProjects/eda_msa_hexagonal/MemberMS/src/main/kotlin/study/bhyunnie/member",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -128,6 +120,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\bhyunnie\IdeaProjects\eda_msa_hexagonal\MemberMS\src\main\kotlin\study\bhyunnie\member" />
       <recent name="C:\Users\bhyunnie\IdeaProjects\eda_msa_hexagonal\BookMS\src\main\kotlin\study\bhyunnie\book" />
       <recent name="C:\Users\bhyunnie\IdeaProjects\eda_msa_hexagonal\BookMS\src\main\kotlin\study\bhyunnie\book\config" />
       <recent name="C:\Users\bhyunnie\IdeaProjects\eda_msa_hexagonal\RentalMS" />
@@ -150,7 +143,14 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.BookMsApplicationKt">
+  <component name="RunManager" selected="Kotlin.IDName">
+    <configuration name="IDName" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="study.bhyunnie.member.domain.model.vo.IDName" />
+      <module name="MemberMS.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BookMsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="BookMS.main" />
@@ -166,6 +166,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MemberMsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="MemberMS.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="study.bhyunnie.member.MemberMsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemberMsApplicationKt" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="MemberMS.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="study.bhyunnie.member.MemberMsApplicationKt" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RentalMSApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="RentalMS.main" />
@@ -174,6 +190,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.IDName" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -208,7 +229,8 @@
       <workItem from="1734096694133" duration="86000" />
       <workItem from="1734096790846" duration="122000" />
       <workItem from="1734096920086" duration="287000" />
-      <workItem from="1734097218330" duration="27095000" />
+      <workItem from="1734097218330" duration="30810000" />
+      <workItem from="1734309218016" duration="1635000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -266,7 +288,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734097452797</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat: Book 서비스 작성 완료">
+      <option name="closed" value="true" />
+      <created>1734282914677</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1734282914677</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
