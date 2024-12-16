@@ -1,5 +1,6 @@
 package study.bhyunnie.member.domain.model
 
+import jakarta.persistence.*
 import study.bhyunnie.member.domain.model.vo.Authority
 import study.bhyunnie.member.domain.model.vo.Email
 import study.bhyunnie.member.domain.model.vo.IDName
@@ -7,12 +8,20 @@ import study.bhyunnie.member.domain.model.vo.Password
 import study.bhyunnie.member.domain.model.vo.Point
 import study.bhyunnie.member.domain.model.vo.UserRole
 
+@Entity
 class Member(
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	val memberNo: Long = 0,
+	@Embedded
 	val idName: IDName,
+	@Embedded
 	val password: Password,
+	@Embedded
 	val email: Email,
+	@ElementCollection
 	val authorities: ArrayList<Authority> = arrayListOf(),
+	@Embedded
 	val point: Point
 ) {
 	companion object {

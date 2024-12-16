@@ -5,18 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70d4694b-6804-4f28-b76e-c03912f3f95b" name="Changes" comment="feat: Book 서비스 작성 완료">
-      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/common/Constants.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/config/KafkaConfig.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/config/SwaggerConfig.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/Member.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/vo/Authority.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/vo/Email.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/vo/IDName.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/vo/Password.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/vo/Point.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/vo/UserRole.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/eda_msa_hexagonal.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/settings.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/application/input/AddMemberInputPort.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/application/input/InquiryMemberInputPort.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/application/input/SavePointInputPort.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/application/input/UsePointInputPort.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/application/output/MemberOutputPort.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/application/usecase/AddMemberUsecase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/application/usecase/InquiryMemberUsecase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/application/usecase/SavePointUsecase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/application/usecase/UsePointUsecase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/framework/jpaadapter/MemberJpaAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/framework/jpaadapter/MemberRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/framework/web/MemberController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/framework/web/dto/MemberInfoDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/framework/web/dto/MemberOutputDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/Member.kt" beforeDir="false" afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/Member.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/vo/Authority.kt" beforeDir="false" afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/vo/Authority.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/vo/Email.kt" beforeDir="false" afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/vo/Email.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/vo/IDName.kt" beforeDir="false" afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/vo/IDName.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/vo/Password.kt" beforeDir="false" afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/vo/Password.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/vo/Point.kt" beforeDir="false" afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/vo/Point.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,9 +74,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Enum" />
         <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
-        <option value="Kotlin Enum" />
       </list>
     </option>
   </component>
@@ -66,6 +88,9 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -91,14 +116,17 @@
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.BookMsApplication.executor": "Debug",
     "Spring Boot.EdaMsaHexagonalApplication.executor": "Run",
+    "WebServerToolWindowFactoryState": "false",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "corretto-17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/bhyunnie/IdeaProjects/eda_msa_hexagonal/MemberMS/src/main/kotlin/study/bhyunnie/member",
+    "last_opened_file_path": "/Users/honey/IdeaProjects/eda_msa_hexagonal/MemberMS/src/main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -108,7 +136,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "show.migrate.to.gradle.popup": "false",
     "vue.rearranger.settings.migration": "true"
   },
@@ -120,16 +148,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/MemberMS/src/main" />
+      <recent name="$PROJECT_DIR$/MemberMS" />
       <recent name="C:\Users\bhyunnie\IdeaProjects\eda_msa_hexagonal\MemberMS\src\main\kotlin\study\bhyunnie\member" />
       <recent name="C:\Users\bhyunnie\IdeaProjects\eda_msa_hexagonal\BookMS\src\main\kotlin\study\bhyunnie\book" />
       <recent name="C:\Users\bhyunnie\IdeaProjects\eda_msa_hexagonal\BookMS\src\main\kotlin\study\bhyunnie\book\config" />
-      <recent name="C:\Users\bhyunnie\IdeaProjects\eda_msa_hexagonal\RentalMS" />
-      <recent name="C:\Users\bhyunnie\IdeaProjects\eda_msa_hexagonal" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\bhyunnie\IdeaProjects\eda_msa_hexagonal" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="study.bhyunnie.member.framework.web" />
+      <recent name="study.bhyunnie.member.application.usecase" />
       <recent name="study.bhyunnie.book.framework.web" />
       <recent name="study.bhyunnie.eda_msa_hexagonal.framework.web.dto" />
     </key>
@@ -231,6 +261,7 @@
       <workItem from="1734096920086" duration="287000" />
       <workItem from="1734097218330" duration="30810000" />
       <workItem from="1734309218016" duration="1635000" />
+      <workItem from="1734331433167" duration="4889000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -319,5 +350,9 @@
     <MESSAGE value="feat: 마이크로서비스 별 모듈 분리, Book 서비스 추가" />
     <MESSAGE value="feat: Book 서비스 작성 완료" />
     <option name="LAST_COMMIT_MESSAGE" value="feat: Book 서비스 작성 완료" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

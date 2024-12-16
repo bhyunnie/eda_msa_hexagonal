@@ -1,5 +1,8 @@
 package study.bhyunnie.member.domain.model.vo
 
+import jakarta.persistence.Embeddable
+
+@Embeddable
 data class Authority(
 	val roleName: UserRole
 ) {
