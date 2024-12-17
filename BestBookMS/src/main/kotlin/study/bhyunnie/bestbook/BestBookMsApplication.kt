@@ -1,4 +1,4 @@
-package study.bhyunnie.bestbookms
+package study.bhyunnie.bestbook
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

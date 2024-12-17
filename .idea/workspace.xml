@@ -4,13 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70d4694b-6804-4f28-b76e-c03912f3f95b" name="Changes" comment="feat: Member 서비스 작성">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="70d4694b-6804-4f28-b76e-c03912f3f95b" name="Changes" comment="feat: Best Book 서비스 추가">
+      <change afterPath="$PROJECT_DIR$/BestBookMS/src/main/kotlin/study/bhyunnie/bestbook/common/Constants.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BestBookMS/src/main/kotlin/study/bhyunnie/bestbook/config/KafkaConfig.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BestBookMS/src/main/kotlin/study/bhyunnie/bestbook/config/SwaggerConfig.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BestBookMS/src/main/kotlin/study/bhyunnie/bestbook/domain/BestBookService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BestBookMS/src/main/kotlin/study/bhyunnie/bestbook/domain/model/BestBook.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BestBookMS/src/main/kotlin/study/bhyunnie/bestbook/domain/model/Item.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BestBookMS/src/main/kotlin/study/bhyunnie/bestbook/persistence/BestBookRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BestBookMS/src/main/kotlin/study/bhyunnie/bestbook/web/BestBookController.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookMS/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/BookMS/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MemberMS/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/MemberMS/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RentalMS/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/RentalMS/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BestBookMS/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/BestBookMS/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BestBookMS/src/main/kotlin/study/bhyunnie/bestbookms/BestBookMsApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/BestBookMS/src/main/kotlin/study/bhyunnie/bestbook/BestBookMsApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BestBookMS/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/BestBookMS/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BestBookMS/src/test/kotlin/study/bhyunnie/bestbookms/BestBookMsApplicationTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/BestBookMS/src/test/kotlin/study/bhyunnie/bestbook/BestBookMsApplicationTests.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +86,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.Build BestBookMS.executor": "Run",
     "Gradle.Build BookMS.executor": "Run",
     "Gradle.Build MemberMS.executor": "Run",
     "Gradle.Build eda_msa_hexagonal.executor": "Run",
@@ -94,6 +102,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.BestBookMsApplication.executor": "Run",
     "Spring Boot.BookMsApplication.executor": "Debug",
     "Spring Boot.EdaMsaHexagonalApplication.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
@@ -101,7 +110,7 @@
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/honey/IdeaProjects/eda_msa_hexagonal/MemberMS/src/main",
+    "last_opened_file_path": "C:/Users/bhyunnie/IdeaProjects/eda_msa_hexagonal/BestBookMS/src/main/kotlin",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -123,16 +132,19 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\bhyunnie\IdeaProjects\eda_msa_hexagonal\BestBookMS\src\main\kotlin" />
       <recent name="$PROJECT_DIR$/MemberMS/src/main" />
       <recent name="$PROJECT_DIR$/MemberMS" />
       <recent name="C:\Users\bhyunnie\IdeaProjects\eda_msa_hexagonal\MemberMS\src\main\kotlin\study\bhyunnie\member" />
       <recent name="C:\Users\bhyunnie\IdeaProjects\eda_msa_hexagonal\BookMS\src\main\kotlin\study\bhyunnie\book" />
-      <recent name="C:\Users\bhyunnie\IdeaProjects\eda_msa_hexagonal\BookMS\src\main\kotlin\study\bhyunnie\book\config" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\bhyunnie\IdeaProjects\eda_msa_hexagonal\BestBookMS\src\main\kotlin\study\bhyunnie\bestbookms\common" />
+      <recent name="C:\Users\bhyunnie\IdeaProjects\eda_msa_hexagonal\BestBookMS\src\main\kotlin\study\bhyunnie\bestbookms" />
       <recent name="C:\Users\bhyunnie\IdeaProjects\eda_msa_hexagonal" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="study.bhyunnie.bestbook.domain" />
       <recent name="study.bhyunnie.member.framework.web" />
       <recent name="study.bhyunnie.member.application.usecase" />
       <recent name="study.bhyunnie.book.framework.web" />
@@ -148,7 +160,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.IDName">
+  <component name="RunManager" selected="Spring Boot.BestBookMsApplication">
     <configuration name="IDName" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="study.bhyunnie.member.domain.model.vo.IDName" />
       <module name="MemberMS.main" />
@@ -157,8 +169,16 @@
       </method>
     </configuration>
     <configuration name="BestBookMsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="BestBookMS.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="study.bhyunnie.bestbookms.BestBookMsApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="study.bhyunnie.bestbook.BestBookMsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BestBookMsApplicationKt" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="BestBookMS.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="study.bhyunnie.bestbook.BestBookMsApplicationKt" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -244,7 +264,7 @@
       <workItem from="1734097218330" duration="30810000" />
       <workItem from="1734309218016" duration="1635000" />
       <workItem from="1734331433167" duration="4889000" />
-      <workItem from="1734438790849" duration="2449000" />
+      <workItem from="1734438790849" duration="5087000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -310,7 +330,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734282914677</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="feat: Best Book 서비스 추가">
+      <option name="closed" value="true" />
+      <created>1734445396588</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1734445396588</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -332,7 +360,8 @@
     <MESSAGE value="feat: 대여 도메인 작성" />
     <MESSAGE value="feat: 마이크로서비스 별 모듈 분리, Book 서비스 추가" />
     <MESSAGE value="feat: Book 서비스 작성 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Book 서비스 작성 완료" />
+    <MESSAGE value="feat: Best Book 서비스 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Best Book 서비스 추가" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
