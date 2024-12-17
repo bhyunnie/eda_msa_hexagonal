@@ -1,6 +1,6 @@
 spring:
   application:
-    name: eda_msa_hexagonal
+    name: member
 
   profiles:
     active: default

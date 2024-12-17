@@ -4,41 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70d4694b-6804-4f28-b76e-c03912f3f95b" name="Changes" comment="feat: Book 서비스 작성 완료">
-      <change afterPath="$PROJECT_DIR$/.idea/eda_msa_hexagonal.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MemberMS/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MemberMS/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MemberMS/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MemberMS/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MemberMS/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MemberMS/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MemberMS/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MemberMS/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/application/input/AddMemberInputPort.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/application/input/InquiryMemberInputPort.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/application/input/SavePointInputPort.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/application/input/UsePointInputPort.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/application/output/MemberOutputPort.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/application/usecase/AddMemberUsecase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/application/usecase/InquiryMemberUsecase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/application/usecase/SavePointUsecase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/application/usecase/UsePointUsecase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/framework/jpaadapter/MemberJpaAdapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/framework/jpaadapter/MemberRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/framework/web/MemberController.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/framework/web/dto/MemberInfoDto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/framework/web/dto/MemberOutputDto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/resources/application.yml" afterDir="false" />
+    <list default="true" id="70d4694b-6804-4f28-b76e-c03912f3f95b" name="Changes" comment="feat: Member 서비스 작성">
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/Member.kt" beforeDir="false" afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/Member.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/vo/Authority.kt" beforeDir="false" afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/vo/Authority.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/vo/Email.kt" beforeDir="false" afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/vo/Email.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/vo/IDName.kt" beforeDir="false" afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/vo/IDName.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/vo/Password.kt" beforeDir="false" afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/vo/Password.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/vo/Point.kt" beforeDir="false" afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/vo/Point.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookMS/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/BookMS/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MemberMS/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/MemberMS/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentalMS/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/RentalMS/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +19,9 @@
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/BestBookMS">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/BookMS">
@@ -124,7 +99,7 @@
     "WebServerToolWindowFactoryState": "false",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/honey/IdeaProjects/eda_msa_hexagonal/MemberMS/src/main",
     "node.js.detected.package.eslint": "true",
@@ -177,6 +152,13 @@
     <configuration name="IDName" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="study.bhyunnie.member.domain.model.vo.IDName" />
       <module name="MemberMS.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BestBookMsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="BestBookMS.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="study.bhyunnie.bestbookms.BestBookMsApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -262,6 +244,7 @@
       <workItem from="1734097218330" duration="30810000" />
       <workItem from="1734309218016" duration="1635000" />
       <workItem from="1734331433167" duration="4889000" />
+      <workItem from="1734438790849" duration="2449000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
