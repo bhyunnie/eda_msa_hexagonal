@@ -31,3 +31,12 @@ logging:
     org:
       hibernate:
         SQL: debug
+
+producers:
+  bootstrap-servers: localhost:9092
+  topic1:
+    name: rental_rent
+  topic2:
+    name: rent_return
+  topic3:
+    name: overdue_clear

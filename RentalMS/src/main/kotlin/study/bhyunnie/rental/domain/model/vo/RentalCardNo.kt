@@ -1,4 +1,4 @@
-package study.bhyunnie.rental.model.vo
+package study.bhyunnie.rental.domain.model.vo
 
 import jakarta.persistence.Embeddable
 import java.io.Serializable

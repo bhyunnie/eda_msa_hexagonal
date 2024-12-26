@@ -4,8 +4,8 @@ import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.data.jpa.repository.Query
 import org.springframework.data.repository.query.Param
 import org.springframework.stereotype.Repository
-import study.bhyunnie.rental.model.RentalCard
-import study.bhyunnie.rental.model.vo.RentalCardNo
+import study.bhyunnie.rental.domain.model.RentalCard
+import study.bhyunnie.rental.domain.model.vo.RentalCardNo
 import java.util.Optional
 
 @Repository

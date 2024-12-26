@@ -1,14 +1,18 @@
-package study.bhyunnie.rental.model
+package study.bhyunnie.rental.domain.model
 
 import jakarta.persistence.ElementCollection
 import jakarta.persistence.Embedded
 import jakarta.persistence.EmbeddedId
 import jakarta.persistence.Entity
-import study.bhyunnie.rental.model.vo.LateFee
-import study.bhyunnie.rental.model.vo.IDName
-import study.bhyunnie.rental.model.vo.Item
-import study.bhyunnie.rental.model.vo.RentStatus
-import study.bhyunnie.rental.model.vo.RentalCardNo
+import study.bhyunnie.rental.domain.model.event.ItemRented
+import study.bhyunnie.rental.domain.model.event.ItemReturned
+import study.bhyunnie.rental.domain.model.event.OverdueCleared
+import study.bhyunnie.rental.domain.model.vo.LateFee
+import study.bhyunnie.rental.domain.model.vo.IDName
+import study.bhyunnie.rental.domain.model.vo.Item
+import study.bhyunnie.rental.domain.model.vo.RentStatus
+import study.bhyunnie.rental.domain.model.vo.RentalCardNo
+import java.awt.Point
 import java.time.LocalDate
 import java.time.Period
 
@@ -99,6 +103,18 @@ data class RentalCard(
 				rentStatus = RentStatus.RENT_AVAILABLE,
 				lateFee = LateFee.createLateFee()
 			)
+		}
+
+		fun createItemRentedEvent(idName:IDName, item:Item, point: Long):ItemRented {
+			return ItemRented(idName,item,point)
+		}
+
+		fun createItemReturnEvent(idName:IDName, item:Item, point: Long):ItemReturned {
+			return ItemReturned(idName,item,point)
+		}
+
+		fun createOverdueClearedEvent(idName:IDName, point: Long):OverdueCleared {
+			return OverdueCleared(idName, point)
 		}
 
 		fun sample(): RentalCard {

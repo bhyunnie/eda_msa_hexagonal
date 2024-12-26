@@ -2,7 +2,7 @@ package study.bhyunnie.rental.framework.jpaAdapter
 
 import org.springframework.stereotype.Repository
 import study.bhyunnie.rental.application.output.RentalCardOutputPort
-import study.bhyunnie.rental.model.RentalCard
+import study.bhyunnie.rental.domain.model.RentalCard
 import java.util.*
 
 @Repository

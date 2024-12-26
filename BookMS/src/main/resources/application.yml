@@ -31,3 +31,11 @@ logging:
     org:
       hibernate:
         SQL: debug
+
+consumer:
+  topic1:
+    name: rental_rent
+  topic2:
+    name: rent_return
+  groupId:
+    name: overdue_clear

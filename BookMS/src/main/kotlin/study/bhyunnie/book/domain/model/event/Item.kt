@@ -1,4 +1,4 @@
-package study.bhyunnie.rental.model.vo
+package study.bhyunnie.book.domain.model.event
 
 import jakarta.persistence.Embeddable
 

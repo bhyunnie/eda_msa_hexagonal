@@ -1,4 +1,4 @@
-package study.bhyunnie.rental.model.vo
+package study.bhyunnie.rental.domain.model.vo
 
 enum class RentStatus {
 	RENT_AVAILABLE, // 대여가능

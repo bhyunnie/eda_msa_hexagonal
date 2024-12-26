@@ -1,8 +1,8 @@
-package study.bhyunnie.rental.model
+package study.bhyunnie.rental.domain.model
 
 import jakarta.persistence.Embeddable
 import jakarta.persistence.Embedded
-import study.bhyunnie.rental.model.vo.Item
+import study.bhyunnie.rental.domain.model.vo.Item
 import java.time.LocalDate
 
 @Embeddable

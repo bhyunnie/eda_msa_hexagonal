@@ -4,8 +4,8 @@ import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
 import study.bhyunnie.rental.application.output.RentalCardOutputPort
 import study.bhyunnie.rental.application.usecase.OverdueItemUsecase
-import study.bhyunnie.rental.model.RentalCard
-import study.bhyunnie.rental.model.vo.Item
+import study.bhyunnie.rental.domain.model.RentalCard
+import study.bhyunnie.rental.domain.model.vo.Item
 import study.bhyunnie.rental.framework.web.dto.RentalCardOutputDto
 import study.bhyunnie.rental.framework.web.dto.UserItemInputDto
 

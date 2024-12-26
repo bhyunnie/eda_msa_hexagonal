@@ -1,6 +1,6 @@
 package study.bhyunnie.rental.framework.web.dto
 
-import study.bhyunnie.rental.model.ReturnItem
+import study.bhyunnie.rental.domain.model.ReturnItem
 import java.time.LocalDate
 
 class ReturnItemOutputDto(

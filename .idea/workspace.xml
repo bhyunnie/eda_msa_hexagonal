@@ -4,20 +4,55 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70d4694b-6804-4f28-b76e-c03912f3f95b" name="Changes" comment="feat: Best Book 서비스 추가">
-      <change afterPath="$PROJECT_DIR$/BestBookMS/src/main/kotlin/study/bhyunnie/bestbook/common/Constants.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BestBookMS/src/main/kotlin/study/bhyunnie/bestbook/config/KafkaConfig.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BestBookMS/src/main/kotlin/study/bhyunnie/bestbook/config/SwaggerConfig.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BestBookMS/src/main/kotlin/study/bhyunnie/bestbook/domain/BestBookService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BestBookMS/src/main/kotlin/study/bhyunnie/bestbook/domain/model/BestBook.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BestBookMS/src/main/kotlin/study/bhyunnie/bestbook/domain/model/Item.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BestBookMS/src/main/kotlin/study/bhyunnie/bestbook/persistence/BestBookRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BestBookMS/src/main/kotlin/study/bhyunnie/bestbook/web/BestBookController.kt" afterDir="false" />
+    <list default="true" id="70d4694b-6804-4f28-b76e-c03912f3f95b" name="Changes" comment="feat: kafka 추가">
+      <change afterPath="$PROJECT_DIR$/BestBookMS/src/main/kotlin/study/bhyunnie/bestbook/domain/event/IDName.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BestBookMS/src/main/kotlin/study/bhyunnie/bestbook/domain/event/ItemRented.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BestBookMS/src/main/kotlin/study/bhyunnie/bestbook/web/BestBookEventConsumers.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMS/src/main/kotlin/study/bhyunnie/book/domain/model/event/IDName.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMS/src/main/kotlin/study/bhyunnie/book/domain/model/event/Item.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMS/src/main/kotlin/study/bhyunnie/book/domain/model/event/ItemRented.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMS/src/main/kotlin/study/bhyunnie/book/domain/model/event/ItemReturned.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMS/src/main/kotlin/study/bhyunnie/book/framework/kafkaadpater/BookEventConsumers.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/event/Item.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/event/ItemRented.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/event/ItemReturned.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/event/OverdueCleared.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/framework/kafkaadapter/MemberEventConsumers.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/application/output/EventOutputPort.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/domain/model/event/ItemRented.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/domain/model/event/ItemReturned.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/domain/model/event/OverdueCleared.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/framework/kafkaAdapter/RentalKafkaProducer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infra/docker-compose-infra.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BestBookMS/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/BestBookMS/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BestBookMS/src/main/kotlin/study/bhyunnie/bestbookms/BestBookMsApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/BestBookMS/src/main/kotlin/study/bhyunnie/bestbook/BestBookMsApplication.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BestBookMS/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/BestBookMS/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BestBookMS/src/test/kotlin/study/bhyunnie/bestbookms/BestBookMsApplicationTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/BestBookMS/src/test/kotlin/study/bhyunnie/bestbook/BestBookMsApplicationTests.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BestBookMS/src/main/kotlin/study/bhyunnie/bestbook/config/KafkaConfig.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookMS/src/main/kotlin/study/bhyunnie/book/config/KafkaConfig.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookMS/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/BookMS/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MemberMS/src/main/kotlin/study/bhyunnie/member/config/KafkaConfig.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MemberMS/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/MemberMS/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/application/input/ClearOverdueItemInputPort.kt" beforeDir="false" afterPath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/application/input/ClearOverdueItemInputPort.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/application/input/CreateRentalCardInputPort.kt" beforeDir="false" afterPath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/application/input/CreateRentalCardInputPort.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/application/input/OverdueItemInputPort.kt" beforeDir="false" afterPath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/application/input/OverdueItemInputPort.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/application/input/RentItemInputPort.kt" beforeDir="false" afterPath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/application/input/RentItemInputPort.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/application/input/ReturnItemInputPort.kt" beforeDir="false" afterPath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/application/input/ReturnItemInputPort.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/application/output/RentalCardOutputPort.kt" beforeDir="false" afterPath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/application/output/RentalCardOutputPort.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/config/KafkaConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/config/KafkaConfig.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/framework/jpaAdapter/RentalCardJpaAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/framework/jpaAdapter/RentalCardJpaAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/framework/jpaAdapter/RentalCardRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/framework/jpaAdapter/RentalCardRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/framework/web/dto/RentItemOutputDto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/framework/web/dto/RentItemOutputDto.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/framework/web/dto/RentalCardOutputDto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/framework/web/dto/RentalCardOutputDto.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/framework/web/dto/RentalResultOutputDto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/framework/web/dto/RentalResultOutputDto.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/framework/web/dto/ReturnItemOutputDto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/framework/web/dto/ReturnItemOutputDto.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/model/RentalCard.kt" beforeDir="false" afterPath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/domain/model/RentalCard.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/model/RentalItem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/domain/model/RentalItem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/model/ReturnItem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/domain/model/ReturnItem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/model/vo/IDName.kt" beforeDir="false" afterPath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/domain/model/vo/IDName.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/model/vo/Item.kt" beforeDir="false" afterPath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/domain/model/vo/Item.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/model/vo/LateFee.kt" beforeDir="false" afterPath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/domain/model/vo/LateFee.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/model/vo/RentStatus.kt" beforeDir="false" afterPath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/domain/model/vo/RentStatus.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/model/vo/RentalCardNo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/RentalMS/src/main/kotlin/study/bhyunnie/rental/domain/model/vo/RentalCardNo.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentalMS/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/RentalMS/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,59 +119,62 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build BestBookMS.executor": "Run",
-    "Gradle.Build BookMS.executor": "Run",
-    "Gradle.Build MemberMS.executor": "Run",
-    "Gradle.Build eda_msa_hexagonal.executor": "Run",
-    "Kotlin.IDName.executor": "Run",
-    "Kotlin.Member.executor": "Run",
-    "Kotlin.RentalCard.executor": "Run",
-    "Kotlin.RentalCardNo.executor": "Run",
-    "Kotlin.ReturnItem.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.BestBookMsApplication.executor": "Run",
-    "Spring Boot.BookMsApplication.executor": "Debug",
-    "Spring Boot.EdaMsaHexagonalApplication.executor": "Run",
-    "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/bhyunnie/IdeaProjects/eda_msa_hexagonal/BestBookMS/src/main/kotlin",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "show.migrate.to.gradle.popup": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.infra/docker-compose-infra.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build BestBookMS.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build BookMS.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build MemberMS.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build RentalMS.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build eda_msa_hexagonal.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.IDName.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.Member.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.RentalCard.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.RentalCardNo.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.ReturnItem.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.BestBookMsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.BookMsApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.EdaMsaHexagonalApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.RentalMSApplication.executor&quot;: &quot;Run&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/bhyunnie/IdeaProjects/eda_msa_hexagonal/MemberMS/src/main/kotlin/study/bhyunnie/member/domain/model/event&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "kotlin-gradle-user-dirs": [
-      "C:\\Users\\bhyunnie\\.gradle"
+  &quot;keyToStringList&quot;: {
+    &quot;kotlin-gradle-user-dirs&quot;: [
+      &quot;C:\\Users\\bhyunnie\\.gradle&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\bhyunnie\IdeaProjects\eda_msa_hexagonal\MemberMS\src\main\kotlin\study\bhyunnie\member\domain\model\event" />
+      <recent name="C:\Users\bhyunnie\IdeaProjects\eda_msa_hexagonal\BookMS\src\main\kotlin\study\bhyunnie\book\domain\model\event" />
       <recent name="C:\Users\bhyunnie\IdeaProjects\eda_msa_hexagonal\BestBookMS\src\main\kotlin" />
       <recent name="$PROJECT_DIR$/MemberMS/src/main" />
       <recent name="$PROJECT_DIR$/MemberMS" />
-      <recent name="C:\Users\bhyunnie\IdeaProjects\eda_msa_hexagonal\MemberMS\src\main\kotlin\study\bhyunnie\member" />
-      <recent name="C:\Users\bhyunnie\IdeaProjects\eda_msa_hexagonal\BookMS\src\main\kotlin\study\bhyunnie\book" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\bhyunnie\IdeaProjects\eda_msa_hexagonal\BestBookMS\src\main\kotlin\study\bhyunnie\bestbookms\common" />
@@ -144,11 +182,15 @@
       <recent name="C:\Users\bhyunnie\IdeaProjects\eda_msa_hexagonal" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="study.bhyunnie.bestbook.domain.event" />
       <recent name="study.bhyunnie.bestbook.domain" />
       <recent name="study.bhyunnie.member.framework.web" />
       <recent name="study.bhyunnie.member.application.usecase" />
       <recent name="study.bhyunnie.book.framework.web" />
-      <recent name="study.bhyunnie.eda_msa_hexagonal.framework.web.dto" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="study.bhyunnie.member.config" />
+      <recent name="study.bhyunnie.bestbook.domain.model" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -222,8 +264,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="infra/docker-compose-infra.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="infra/docker-compose-infra.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.infra/docker-compose-infra.yml: Compose Deployment" />
         <item itemvalue="Kotlin.IDName" />
       </list>
     </recent_temporary>
@@ -264,7 +321,11 @@
       <workItem from="1734097218330" duration="30810000" />
       <workItem from="1734309218016" duration="1635000" />
       <workItem from="1734331433167" duration="4889000" />
-      <workItem from="1734438790849" duration="5087000" />
+      <workItem from="1734438790849" duration="27793000" />
+      <workItem from="1734912570513" duration="12108000" />
+      <workItem from="1735131847259" duration="4000" />
+      <workItem from="1735171071851" duration="5073000" />
+      <workItem from="1735202722098" duration="1366000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -338,7 +399,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734445396588</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="feat: Best Book 서비스 작성완료">
+      <option name="closed" value="true" />
+      <created>1734448109627</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1734448109627</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,7 +430,9 @@
     <MESSAGE value="feat: 마이크로서비스 별 모듈 분리, Book 서비스 추가" />
     <MESSAGE value="feat: Book 서비스 작성 완료" />
     <MESSAGE value="feat: Best Book 서비스 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Best Book 서비스 추가" />
+    <MESSAGE value="feat: Best Book 서비스 작성완료" />
+    <MESSAGE value="feat: kafka 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: kafka 추가" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

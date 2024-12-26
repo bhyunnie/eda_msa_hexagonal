@@ -1,6 +1,6 @@
 package study.bhyunnie.rental.framework.web.dto
 
-import study.bhyunnie.rental.model.RentalCard
+import study.bhyunnie.rental.domain.model.RentalCard
 
 class RentalCardOutputDto(
 	val rentalCardId: String,

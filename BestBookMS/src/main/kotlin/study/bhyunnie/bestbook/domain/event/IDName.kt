@@ -1,4 +1,4 @@
-package study.bhyunnie.rental.model.vo
+package study.bhyunnie.bestbook.domain.event
 
 data class IDName(
 	val id: String,
