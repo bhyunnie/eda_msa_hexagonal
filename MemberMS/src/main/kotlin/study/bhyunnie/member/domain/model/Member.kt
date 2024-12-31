@@ -20,7 +20,7 @@ class Member(
 	@Embedded
 	val email: Email,
 	@ElementCollection
-	val authorities: ArrayList<Authority> = arrayListOf(),
+	val authorities: MutableList<Authority> = mutableListOf(),
 	@Embedded
 	val point: Point
 ) {

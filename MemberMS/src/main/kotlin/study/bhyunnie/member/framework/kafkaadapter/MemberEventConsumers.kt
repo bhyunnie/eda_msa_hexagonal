@@ -17,21 +17,21 @@ class MemberEventConsumers(
 ) {
 	private val objectMapper = ObjectMapper()
 
-	@KafkaListener(topics = ["#{'\${consumer.topic1.name}'.split(',')}"], groupId = "#{'\${consumer.groupId.name}'")
+	@KafkaListener(topics = ["#{'\${consumer.topic1.name}'.split(',')}"], groupId = "#{'\${consumer.groupId.name}'}")
 	fun consumeRent(record: ConsumerRecord<String, String>) {
 		println("rental rent >>> " + record.value())
 		val itemRented = objectMapper.readValue(record.value(), ItemRented::class.java)
 		usePointUsecase.usePoint(itemRented.idName, itemRented.point)
 	}
 
-	@KafkaListener(topics = ["#{'\${consumer.topic1.name}'.split(',')}"], groupId = "#{'\${consumer.groupId.name}'")
+	@KafkaListener(topics = ["#{'\${consumer.topic1.name}'.split(',')}"], groupId = "#{'\${consumer.groupId.name}'}")
 	fun consumeReturn(record: ConsumerRecord<String, String>) {
 		println("rental return >>> " + record.value())
 		val itemReturned = objectMapper.readValue(record.value(), ItemReturned::class.java)
 		savePointUsecase.savePoint(itemReturned.idName, itemReturned.point)
 	}
 
-	@KafkaListener(topics = ["#{'\${consumer.topic3.name}'.split(',')}"], groupId = "#{'\${consumer.groupId.name}'")
+	@KafkaListener(topics = ["#{'\${consumer.topic3.name}'.split(',')}"], groupId = "#{'\${consumer.groupId.name}'}")
 	fun consumeClear(record: ConsumerRecord<String, String>) {
 		println("rental clear >>> " + record.value())
 		val overdueCleared = objectMapper.readValue(record.value(), OverdueCleared::class.java)

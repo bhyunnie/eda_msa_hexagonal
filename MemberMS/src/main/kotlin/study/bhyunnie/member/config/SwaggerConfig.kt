@@ -14,19 +14,10 @@ import study.bhyunnie.member.common.LOCAL_URL
 class SwaggerConfig {
 	@Bean
 	fun openApi(): OpenAPI {
-		val securityRequirement = SecurityRequirement().addList("Bearer Token")
 		return OpenAPI()
 			.components(Components())
 			.info(getInfo())
 			.servers(setServer())
-			.components(
-				Components().addSecuritySchemes(
-					"bearer-key",
-					SecurityScheme().type(SecurityScheme.Type.HTTP).`in`(SecurityScheme.In.HEADER).name("Authorization")
-						.scheme("bearer").bearerFormat("JWT")
-				)
-			)
-			.addSecurityItem(securityRequirement)
 	}
 
 	private fun getInfo(): Info {
