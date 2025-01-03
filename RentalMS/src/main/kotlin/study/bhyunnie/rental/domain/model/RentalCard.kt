@@ -47,9 +47,23 @@ data class RentalCard(
 	}
 
 	// 대여 처리
-	fun rentItem(item: Item) {
+	fun rentItem(item: Item):RentalCard {
 		checkRentalAvailable()
 		addRentalItem(RentalItem.createRentalItem(item = item))
+		return this
+	}
+
+	fun cancelRentItem(item: Item):RentalCard {
+		val rentalItem:RentalItem = this.rentalItemList.first { it.item == item }
+		this.rentalItemList.remove(rentalItem)
+		return this
+	}
+
+	fun cancelReturnItem(item:Item, point:Long): RentalCard {
+		val returnItem = this.returnItemList.first { it.rentalItem.item == item }
+		this.addReturnItem(returnItem)
+		this.removeReturnItem(returnItem)
+		return this
 	}
 
 	// 반납 처리
@@ -92,6 +106,12 @@ data class RentalCard(
 		if (this.lateFee.point == 0L) {
 			this.rentStatus = RentStatus.RENT_AVAILABLE
 		}
+		return this.lateFee.point
+	}
+
+	fun cancelMakeAvailableRental(point:Long):Long {
+		this.lateFee = lateFee.addPoint(point)
+		this.rentStatus = RentStatus.RENT_UNAVAILABLE
 		return this.lateFee.point
 	}
 

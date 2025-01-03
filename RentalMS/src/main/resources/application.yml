@@ -40,3 +40,11 @@ producers:
     name: rent_return
   topic3:
     name: overdue_clear
+  topic4:
+    name: point_use
+
+consumer:
+  topic1:
+    name: rental_result
+  groupId:
+    name: rental
