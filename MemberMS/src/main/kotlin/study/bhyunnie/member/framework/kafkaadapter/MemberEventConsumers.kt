@@ -6,14 +6,13 @@ import org.springframework.kafka.annotation.KafkaListener
 import org.springframework.stereotype.Service
 import study.bhyunnie.member.application.usecase.SavePointUsecase
 import study.bhyunnie.member.application.usecase.UsePointUsecase
-import study.bhyunnie.member.domain.model.event.ItemRented
-import study.bhyunnie.member.domain.model.event.ItemReturned
-import study.bhyunnie.member.domain.model.event.OverdueCleared
+import study.bhyunnie.member.domain.model.event.*
 
 @Service
 class MemberEventConsumers(
 	private val savePointUsecase: SavePointUsecase,
-	private val usePointUsecase: UsePointUsecase
+	private val usePointUsecase: UsePointUsecase,
+	private val eventProducer: MemberEventProducer
 ) {
 	private val objectMapper = ObjectMapper()
 
@@ -33,8 +32,30 @@ class MemberEventConsumers(
 
 	@KafkaListener(topics = ["#{'\${consumer.topic3.name}'.split(',')}"], groupId = "#{'\${consumer.groupId.name}'}")
 	fun consumeClear(record: ConsumerRecord<String, String>) {
-		println("rental clear >>> " + record.value())
 		val overdueCleared = objectMapper.readValue(record.value(), OverdueCleared::class.java)
-		usePointUsecase.usePoint(overdueCleared.idName, overdueCleared.point)
+		val eventResult = EventResult(
+			eventType = EventType.OVERDUE,
+			idName = overdueCleared.idName,
+			point = overdueCleared.point,
+			item = Item.sample(),
+			success = false
+		)
+
+		println(record.value())
+
+		try {
+			usePointUsecase.usePoint(overdueCleared.idName,overdueCleared.point)
+			eventResult.success = true
+		} catch (e:Exception) {
+			eventResult.success = false
+		}
+		eventProducer.occurEvent(eventResult)
+	}
+
+	@KafkaListener(topics = ["#{'\${consumer.topic4.name}'.split(',')}"])
+	fun consumeUsePoint(record: ConsumerRecord<String,String>) {
+		println(record.value())
+		val pointUseCommand = objectMapper.readValue(record.value(), PointUseCommand::class.java)
+		usePointUsecase.usePoint(pointUseCommand.idName, pointUseCommand.point)
 	}
 }

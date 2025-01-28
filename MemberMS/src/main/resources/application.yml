@@ -41,3 +41,10 @@ consumer:
     name: overdue_clear
   groupId:
     name: member
+
+producers:
+  topci1:
+    name:
+
+kafka:
+  bootstrapAddress: localhost:9092
